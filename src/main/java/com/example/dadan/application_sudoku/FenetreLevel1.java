@@ -57,13 +57,12 @@ public class FenetreLevel1 extends AppCompatActivity {
 
                 //gestion popup
                  AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                builder.setTitle("Confirmer");
+                builder.setTitle("Information");
                 // On récupère le texte de l'item cliqué
                 final VListe itemValue = (VListe) maListe.getItemAtPosition(position);
                 builder.setMessage("\n Niveau :"+itemValue.getLevel()+"\n Grille n° "+itemValue.getNum()+"\n Fini à : "+itemValue.getDone() );
                 builder.setCancelable(false);
-                builder.setNeutralButton("continuer",null);
-                builder.setPositiveButton("oui",new DialogInterface.OnClickListener() {
+                builder.setNeutralButton("continuer",new DialogInterface.OnClickListener() {
 
                     /**
                      *
@@ -78,8 +77,9 @@ public class FenetreLevel1 extends AppCompatActivity {
                     }
                 });
 
+
                 // cas ou l'utilisateur appuie sur non, il retourne à la liste des grilles
-                builder.setNegativeButton("non",null);
+                builder.setNegativeButton("Annuler",null);
                 AlertDialog alert = builder.create();
                 alert.show();
 

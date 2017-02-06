@@ -22,6 +22,7 @@ public class Sudoku_grille extends AppCompatActivity {
 
         contexte = this;
 
+        //récupération du numero de grille
         String grille = (String) this.getIntent().getExtras().get("grille");
 
         int cpt = 0;

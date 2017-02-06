@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -11,39 +12,41 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.dadan.application_sudoku.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SUDOKU"
-        android:textStyle="normal|bold"
-        android:textSize="24sp"
-        android:textAlignment="center"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+
+
 
     <Button
         android:text="LEVEL 1"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="106dp"
         android:id="@+id/buttonLevel1"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="LEVEL 3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonLevel3"
-        android:layout_alignBaseline="@+id/buttonLevel1"
-        android:layout_alignBottom="@+id/buttonLevel1"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/buttonLevel2" />
 
     <Button
         android:text="LEVEL 2"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/buttonLevel2"
+        android:layout_below="@+id/buttonLevel1"
+        android:layout_alignStart="@+id/buttonLevel3"
+        android:layout_marginTop="26dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        app:srcCompat="@mipmap/ic"
+        android:id="@+id/imageView4"
+        android:layout_above="@+id/buttonLevel1"
         android:layout_centerHorizontal="true"
-        android:layout_alignBottom="@+id/buttonLevel1" />
+        android:layout_height="300dp" />
+
+    <Button
+        android:text="LEVEL 3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLevel3"
+        android:layout_below="@+id/buttonLevel2"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_marginTop="32dp" />
+
 </RelativeLayout>
