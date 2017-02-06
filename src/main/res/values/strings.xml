@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Application_sudoku</string>
+    <string name="title_activity_fenetre_level1">FenetreLevel1</string>
+    <string name="title_activity_fenetre_level2">FenetreLevel2</string>
+    <string name="title_activity_fenetre_level3">FenetreLevel3</string>
+    <string name="title_activity_sudoku_grille">Sudoku_grille</string>
+</resources>

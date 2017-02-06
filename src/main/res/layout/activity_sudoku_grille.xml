@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.dadan.application_sudoku.Sudoku_grille">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:textAlignment="center"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Grille"
+        android:layout_width="2260dp"
+        android:layout_height="76dp"
+        android:id="@+id/textView3"
+        android:textStyle="normal|bold"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true" />
+
+    <com.example.dadan.application_sudoku.Dessin_grille
+        android:id="@+id/dessin"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+</RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
